@@ -18,5 +18,5 @@
 #include "LibroCalificaciones.h"
 
 int main() {
-
+    int agfsdfgbs = 0;
 }
