@@ -22,10 +22,10 @@
 class LibroCalificaciones {
 
 private:
-    int ESTUDIANTES = 10;
-    int EXAMENES = 3;
+    const int ESTUDIANTES = 10;
+    const int EXAMENES = 3;
     std::string nombreCurso;
-    int calificaciones(int, int);
+    int calificaciones[ESTUDIANTES][EXAMENES];
     int obtenerNotaMinima();
     int obtenerNotaMaxima();
     double obtenerPromedio(const int, const int, int);

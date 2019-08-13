@@ -17,11 +17,18 @@
 #include <iomanip>
 #include <iostream>
 
-
-    int calificaciones(int, int);
-    int obtenerNotaMinima();
-    int obtenerNotaMaxima();
-    double obtenerPromedio(const int, const int, int);
+    int obtenerNotaMinima(){
+        int notaMin = 0;
+        if(notaMin)
+        return notaMin;
+        
+    }
+    int obtenerNotaMaxima(){
+        
+    }
+    double obtenerPromedio(const int, const int, int){
+        
+    }
 
     LibroCalificaciones::LibroCalificaciones(){
         
