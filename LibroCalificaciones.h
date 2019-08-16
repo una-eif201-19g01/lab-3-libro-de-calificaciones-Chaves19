@@ -16,20 +16,19 @@
 
 #ifndef CALIFICACIONES_LIBROCALIFICACIONES_H
 #define CALIFICACIONES_LIBROCALIFICACIONES_H
-
 #include <string>
 
+const int ESTUDIANTES = 10;
+const int EXAMENES = 3;
 class LibroCalificaciones {
 
 private:
-    const int ESTUDIANTES = 10;
-    const int EXAMENES = 3;
     std::string nombreCurso;
     int calificaciones[ESTUDIANTES][EXAMENES];
-    int obtenerNotaMinima();
-    int obtenerNotaMaxima();
     double obtenerPromedio(const int, const int, int);
 public:
+    int obtenerNotaMinima();
+    int obtenerNotaMaxima();
     LibroCalificaciones();
     LibroCalificaciones(const std::string, int);
     std::string obtenerReporteNotas();
