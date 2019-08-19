@@ -5,9 +5,9 @@
  *
  *    Description:  Reporte de calificaciones
  *
- *        Created:  2019-08-12
+ *        Created:  2019-08-19
  *
- *         Author:  Maikol Guzman Alan mikeguzman@gmail.com
+ *         Author:  Alonso Chaves achaqui@yahoo.com
  *   Organization:  Universidad Nacional de Costa Rica
  *
  * =====================================================================================
@@ -20,21 +20,22 @@
 
 const int ESTUDIANTES = 10;
 const int EXAMENES = 3;
-class LibroCalificaciones {
+
+class LibroCalificaciones{
 
 private:
     std::string nombreCurso;
     int calificaciones[ESTUDIANTES][EXAMENES];
-    double obtenerPromedio(const int, const int, int);
+    double obtenerPromedio(int);
 public:
     int obtenerNotaMinima();
     int obtenerNotaMaxima();
     LibroCalificaciones();
-    LibroCalificaciones(const std::string, int);
+    LibroCalificaciones(std::string, int[][EXAMENES]);
     std::string obtenerReporteNotas();
     std::string obtenerReporteNotasMaxMin();
     std::string getNombreCurso();
-    void setNombreCurso();
+    void setNombreCurso(std:: string nC);
     
 
 };
